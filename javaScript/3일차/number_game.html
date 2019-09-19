@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <script>
+    document.write('브라우저의 콘솔을 열어주세요~');
+    var number=Math.floor(Math.random()*6); //floor는 반올림
+    var answer=parseInt(window.prompt('1~5중 숫자 한 개를 골라주세요.'));
+    console.log(number);
+    if(answer === number){
+        window.alert('정답!!');
+    }
+    else if(answer < number){
+        window.alert('더 큰 숫자!');
+    }
+    else if(answer >number){
+        window.alert('더 작은 숫자!');
+    }
+    </script>
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <section>
+            <h1>해야 할 일 목록</h1>
+            <ol id='list'>
+            </ol>
+        </section>
+        <script>
+        var todo=['토익 공부', 'javaScript 공부하기', '예능 보기','게임하기'];
+        todo.push('책상 정리하기')
+
+        for(var i=0; i<todo.length; i++)
+        {
+            var li=document.createElement('li');
+            li.textContent=todo[i];
+            document.getElementById('list').appendChild(li);
+        }
+    </script>
+    </body>
+</html>
