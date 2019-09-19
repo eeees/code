@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <footer>JavaScript</footer>
+    </head>
+    <body>
+        <section>
+            <!--submit를 누르면 from의 action에 입력된 내용이 전송-->
+            <form action="#" id="form">
+                <input type="submit" value="검색">
+            </form>
+        </section>
+        <script>
+            document.getElementById('form').onsubmit=function(){
+              document.getElementById('form').textContent='클릭했습니다.';
+            };
+        </script>
+    </body>
+</html>

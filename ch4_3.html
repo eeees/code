@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <footer>2019.9.20</footer>
+    </head>
+    <body>
+        <section>
+            <form action="#" id ="form">
+                <input type="text" name="word">
+                <input type="submit" value="검색">
+            </form>
+            <p id ="output"></p>
+        </section>
+        <!--onsubmit은 입력한 word가 서버에 전송되기 직전에 발생한다.
+        즉 word를 작성하고 검색을 누르는 순간 실행되는 것이다.
+        -->
+        <script>
+            document.getElementById('form').onsubmit=function(){
+            var search=document.getElementById('form').word.value;
+            document.getElementById('output').textContent=search + '검색중';
+            return false;
+            };
+        </script>
+    </body>
+</html>
