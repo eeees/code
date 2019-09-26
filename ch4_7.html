@@ -1,1 +1,24 @@
-<!--0을 붙여서 자릿수 맞추기-->
+<!--0을 붙여서 자릿수 맞추기 -> 숫자를 문자열로 변환-->
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <footer>
+            2019년09월26일
+        </footer>
+    </head>
+    <body>
+        <!--함수를 작성하여 결과값이 제대로 출력되는지 테스트-->
+        <script>
+            var addNumber=function(num,digit){
+                var numString=String(num);
+                while(numString.length<digit)
+                {
+                    numString='0'+numString;
+                }
+                return numString;
+            }
+        var return_value=addNumber(3,2);
+        console.log(return_value);
+        </script>
+    </body>
+</html>
