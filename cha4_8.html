@@ -1,0 +1,43 @@
+<!--목록에 번호 붙이기-->
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <footer>
+            2019년 9월 26일  
+        </footer>
+    </head>
+    <body>
+        <section>
+            <h2>javaScript list</h2>
+            <div id="list"></div>
+    </section>
+    <script>
+    var addToNum=function(num,digit)
+    {
+        var numString=String(num);
+        while(numString.length<digit)
+        {
+            numString='0'+numString;
+        }
+        return numString;
+    }    
+    var lists=[
+        '자바스크립트 소개',
+        '출력의 기본',
+        '자바스크립트 문법과 기본 기능',
+        '입력과 데이터 가공',
+        '실전 기술',
+        '제이쿼리 입문',
+        '외부 데이터를 활용하는 어플리케이션 만들기'
+    ];
+
+    for(var i=0;i<lists.length;i++)
+    {
+        var paragraph=document.createElement('p');
+        paragraph.textContent=addToNum(i+1,2)+'. '+lists[i];
+        document.getElementById('list').appendChild(paragraph);
+    }
+    </script>
+    </body>
+
+</html>
